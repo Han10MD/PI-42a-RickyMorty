@@ -1,0 +1,54 @@
+.div{
+    width: 100%;
+    height: 10vh;
+    background: #414b5be8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    color: white;
+    left: 45px;
+    position: relative;
+    width: 20%;
+    height: 50%;
+    background: #0d0d0dc6;
+    border-radius: 5.0rem;
+    border: none;
+    padding: 0 0 0 10rem;
+}
+
+.btn{
+    left: 60px;
+    position: relative;
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #88e23b,
+        #ebe480
+    );
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 3ms;
+}
+
+.btn span{
+    background-color: #111;
+    padding: 8px 22px;
+    border-radius: 16px;
+    transition: 1s;
+}
+
+.btn:hover span{
+    background: none;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}

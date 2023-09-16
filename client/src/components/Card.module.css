@@ -1,0 +1,169 @@
+.cardContainer {
+  top: 30px;
+  position: relative;
+  width: 21vw;
+  height: 27vw;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(128, 17, 232, 0.614);
+  padding: 0 1rem 6rem 1rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: small; */
+}
+
+.main {
+  font-family: 'Blinker', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  top: 15px;
+  position: relative;
+  border-radius: 50%;
+}
+
+/* styles.css */
+
+.button.favorite {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #ccc;
+  position: relative; /* Para poder posicionar el pseudo-elemento */
+}
+
+/* Pseudo-elemento para crear la forma de corazón */
+.button.favorite::before {
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Cambia la forma del corazón cuando el botón es favorito */
+.button.favorite.favorited::before {
+  transform: scale(1.2); /* Escala el corazón para que parezca que late */
+  color: #ff4500; /* Cambia el color del corazón cuando está marcado como favorito */
+}
+
+
+/* .fav {
+  right: 150px;
+  bottom: 0px;
+  position: relative;
+  padding: 1rem 2rem 3rem 4rem;
+  color: white;
+  background-color:green;
+  border: none;
+  font-size: 1.1em;
+  padding: 10px;
+  border-radius: 10px;
+} */
+
+.button {
+  left: 150px;
+  position: relative;
+  bottom: 40px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+/* Estilo más moderno para el botón "X" */
+.button.close {
+  background-color: black;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 50%;
+  padding: 8px 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para cambiar el botón "X" al pasar el cursor sobre él */
+.button.close:hover {
+  background-color: red;
+  color: white;
+}
+
+/* .button {
+  left: 150px;
+  bottom: 40px;
+  position: relative;
+  padding: 1rem 2rem 3rem 4rem;
+  color: black;
+  background-color: white;
+  border: none;
+  font-size: 1.1em;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: red;
+  cursor: pointer;
+} */
+
+.character {
+  bottom: 40px;
+  position: relative;
+  background: #89e23bcc;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 350px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.name{
+  color: black;
+  bottom: 40px;
+  position: relative;
+  width: 12vw;
+  height: 2vw;
+  border-radius: 10px;
+  background-color: #a6cccc;
+  border: none;
+  cursor: pointer;
+}
+
+/* .closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.characterImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imageContainer {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 5px;
+} */
